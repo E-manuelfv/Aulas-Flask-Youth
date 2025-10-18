@@ -7,15 +7,14 @@ Este repositório contém todos os arquivos, projetos e materiais das aulas de *
 ## 📚 Estrutura do Curso
 
 ### [🔗 Acesse o Notion Completo das Aulas](https://www.notion.seusite.com)
-*(**Lembre-se de adicionar o link real do seu Notion acima**)*
 
 | Aula | Tópicos Principais | Códigos |
 | :--- | :--- | :--- |
-| **Aula 1** - Introdução ao Flask | Configuração, Primeira Aplicação, Estrutura Básica. | [📁 Códigos da Aula 1](./aula-1/) |
-| **Aula 2** - Templates e Rotas | Jinja2, Rotas Dinâmicas, Herança de Templates. | [📁 Códigos da Aula 2](./aula-2/) |
-| **Aula 3** - Formulários e Dados | Formulários, Métodos GET/POST, Validação de Dados. | [📁 Códigos da Aula 3](./aula-3/) |
-| **Aula 4** - Banco de Dados | SQLite, Models, Migrations, CRUD Completo. | [📁 Códigos da Aula 4](./aula-4/) |
-| **Aula 5** - Projeto Final | Desenvolvimento de Aplicação Completa, Deploy, Boas Práticas. | [📁 Códigos da Aula 5](./aula-5/) |
+| **Aula 1** - Introdução ao Flask | Configuração, Primeira Aplicação, Estrutura Básica. | [📁 Link da Aula 1](./aula-1/) |
+| **Aula 2** - Templates e Rotas | Jinja2, Rotas Dinâmicas, Herança de Templates. | [📁 Link Aula 2](./aula-2/) |
+| **Aula 3** - Formulários e Dados | Formulários, Métodos GET/POST, Validação de Dados. | [📁 Link Aula 3](./aula-3/) |
+| **Aula 4** - Banco de Dados | SQLite, Models, Migrations, CRUD Completo. | [📁 Link Aula 4](./aula-4/) |
+| **Aula 5** - Projeto Final | Desenvolvimento de Aplicação Completa, Deploy, Boas Práticas. | [📁 Link Aula 5](./aula-5/) |
 
 ---
 
@@ -31,8 +30,21 @@ Git
 ```
 
 ## Clonar e Executar um Projeto
+Siga os passos abaixo para clonar o repositório e executar o código de uma aula específica:
+```bash
+# 1. Clonar o repositório
+git clone [https://github.com/E-manuelfv/Aulas-Flask-Youth.git](https://github.com/E-manuelfv/Aulas-Flask-Youth.git)
+cd Aulas-Flask-Youth
 
+# 2. Navegar para a pasta da aula desejada (exemplo: aula-1)
+cd aula-1
 
+# 3. Instalar dependências (se houver um requirements.txt)
+pip install -r requirements.txt
+
+# 4. Executar a aplicação
+python app.py
+```
 
 ### 🤝 Contribuindo
 Sua ajuda é muito bem-vinda! Se você encontrou algum erro, tem uma sugestão de melhoria ou quer adicionar conteúdo:
