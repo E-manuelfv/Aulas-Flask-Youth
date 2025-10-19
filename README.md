@@ -6,15 +6,16 @@ Este repositório contém todos os arquivos, projetos e materiais das aulas de *
 
 ## 📚 Estrutura do Curso
 
-### [🔗 Acesse o Notion Completo das Aulas](https://www.notion.seusite.com)
+### [🔗 Acesse o Notion Completo das Aulas](cedar-william-ff0.notion.site/AULAS-FULLSTACK-PYTHON-29139ef840d78065b561fb9a49eebb23?pvs=74)
 
 | Aula | Tópicos Principais | Códigos |
 | :--- | :--- | :--- |
-| **Aula 1** - Introdução ao Flask | Configuração, Primeira Aplicação, Estrutura Básica. | [📁 Link da Aula 1](./aula-1/) |
-| **Aula 2** - Templates e Rotas | Jinja2, Rotas Dinâmicas, Herança de Templates. | [📁 Link Aula 2](./aula-2/) |
-| **Aula 3** - Formulários e Dados | Formulários, Métodos GET/POST, Validação de Dados. | [📁 Link Aula 3](./aula-3/) |
+| **Aula 1** - Introdução ao Flask | Configuração, Primeira Aplicação, Estrutura Básica. | [📁 Link da Aula 1](https://cedar-william-ff0.notion.site/Aula-2-Introdu-o-a-Flask-Templates-21b39ef840d780a98c38d556b75309e9) |
+| **Aula 2** - Templates e Rotas | Jinja2, Rotas Dinâmicas, Herança de Templates. | [📁 Link Aula 2](https://cedar-william-ff0.notion.site/Aula-2-Introdu-o-a-Flask-Templates-21b39ef840d780a98c38d556b75309e9) |
+| **Aula 3** - Formulários e Dados | Formulários, Métodos GET/POST, Validação de Dados. | [📁 Link Aula 3](https://cedar-william-ff0.notion.site/Aula-3-Formul-rio-com-GET-e-POST-21b39ef840d780d6b0b2e003eb5ca969?pvs=74) |
 | **Aula 4** - Banco de Dados | SQLite, Models, Migrations, CRUD Completo. | [📁 Link Aula 4](./aula-4/) |
 | **Aula 5** - Projeto Final | Desenvolvimento de Aplicação Completa, Deploy, Boas Práticas. | [📁 Link Aula 5](./aula-5/) |
+| **Aula 6 (extra)** - Organização de Projeto | Modelo MVC e POO com FLASK. | [📁 Link Aula Extra](cedar-william-ff0.notion.site/Aula-Estrutura-de-Projeto-Flask-Site-21b39ef840d780c5bf65e96bf3160360?pvs=74) |
 
 ---
 
@@ -26,6 +27,7 @@ Para executar os projetos, você precisará ter instalado:
 ```bash
 Python 3.8+
 Flask
+flask_sqlalchemy
 Git
 ```
 
