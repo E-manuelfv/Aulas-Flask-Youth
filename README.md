@@ -17,7 +17,7 @@ Este repositório contém todos os arquivos, projetos e materiais das aulas de *
 | **Aula 5** - Banco de Dados | SQLite, Models, Migrations, CRUD Completo. | [📁 Link Aula 5]() |
 Sistema de Gestão de Usuários
 | **Aula 6 (extra)** - Organização de Projeto | Modelo MVC e POO com FLASK. | [📁 Link Aula 6](cedar-william-ff0.notion.site/Aula-Estrutura-de-Projeto-Flask-Site-21b39ef840d780c5bf65e96bf3160360?pvs=74) |
-| **Aula 7 (projeto)** - Sistema de Gestão de Usuários | Aplicação dos estudos em FLASK. | [📁 Link Aula 7]() |
+| **Aula 7 (projeto)** - Sistema de Gestão de Usuários | Aplicação dos estudos em FLASK. | [📁 Link Aula 7](cedar-william-ff0.notion.site/Aula-7-Sistema-de-Gest-o-de-Usu-rios-21b39ef840d780d496a4cb3782f58f62?pvs=74) |
 | **Aula 8 (projeto)** - Projeto Final | Desenvolvimento de Aplicação Completa, Deploy, Boas Práticas. | [📁 Link Aula 8]() |
 
 
