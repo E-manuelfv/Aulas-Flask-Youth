@@ -1,0 +1,7 @@
+projeto_aula3/
+├── app.py              # Nosso arquivo principal com a classe MyApp
+└── views/
+    └── templates/
+        ├── index.html    # Página inicial (simples)
+        ├── login.html    # Template do formulário de Login
+        └── register.html # Template do formulário de Cadastro
