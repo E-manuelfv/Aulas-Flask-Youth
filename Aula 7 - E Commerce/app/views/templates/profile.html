@@ -1,0 +1,157 @@
+{% extends "base.html"%} {% block content %}
+    <div class="dashboard-container">
+        <!-- Cabeçalho de Boas-vindas -->
+        <div class="welcome-card p-4 mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="h3 mb-2">Bem-vindo(a) à sua área restrita!</h1>
+                    <p class="mb-0">Esta página é exclusiva, acessível somente após a autenticação (protegida por @login_required).</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="user-avatar mx-auto mx-md-0">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <span class="status-badge">
+                        <i class="fas fa-check-circle me-1"></i> Ativo / Autenticado
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <!-- Informações do Usuário -->
+            <div class="col-lg-4 mb-4">
+                <div class="info-card p-4 h-100">
+                    <h3 class="h5 mb-4 text-primary">
+                        <i class="fas fa-id-card me-2"></i> Informações do Perfil
+                    </h3>
+                    
+                    <div class="info-item d-flex justify-content-between">
+                        <span class="fw-bold">ID do Usuário</span>
+                        <span class="text-muted">{{ user.id }}</span>
+                    </div>
+                    
+                    <div class="info-item d-flex justify-content-between">
+                        <span class="fw-bold">Email</span>
+                        <span class="text-muted">{{ user.email }}</span>
+                    </div>
+                    
+                    <div class="info-item d-flex justify-content-between">
+                        <span class="fw-bold">Status da Conta</span>
+                        <span class="text-success">Ativo</span>
+                    </div>
+                    
+                    <div class="info-item d-flex justify-content-between">
+                        <span class="fw-bold">Membro desde</span>
+                        <span class="text-muted">Jan 2023</span>
+                    </div>
+                    
+                    <div class="mt-4 pt-3 border-top text-center">
+                        <button class="logout-btn">
+                            <i class="fas fa-sign-out-alt me-2"></i> Sair (Logout)
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recursos da Plataforma -->
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="feature-card bg-white p-4 text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4 class="h5 mb-3">Análises e Métricas</h4>
+                            <p class="text-muted">Acompanhe suas métricas de uso e desempenho na plataforma.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Visualizar</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="feature-card bg-white p-4 text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <h4 class="h5 mb-3">Configurações</h4>
+                            <p class="text-muted">Personalize suas preferências e configurações de conta.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Acessar</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="feature-card bg-white p-4 text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4 class="h5 mb-3">Segurança</h4>
+                            <p class="text-muted">Gerencie a segurança da sua conta e histórico de acesso.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Verificar</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="feature-card bg-white p-4 text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <h4 class="h5 mb-3">Suporte</h4>
+                            <p class="text-muted">Precisa de ajuda? Entre em contato com nossa equipe.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Contatar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Atividade Recente -->
+        <div class="row mt-2">
+            <div class="col-12">
+                <div class="info-card p-4">
+                    <h3 class="h5 mb-4 text-primary">
+                        <i class="fas fa-history me-2"></i> Atividade Recente
+                    </h3>
+                    
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Data/Hora</th>
+                                    <th>Atividade</th>
+                                    <th>Status</th>
+                                    <th>Detalhes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10/05/2023 14:30</td>
+                                    <td>Login no sistema</td>
+                                    <td><span class="badge bg-success">Sucesso</span></td>
+                                    <td><a href="#" class="text-primary">Ver detalhes</a></td>
+                                </tr>
+                                <tr>
+                                    <td>09/05/2023 11:15</td>
+                                    <td>Alteração de senha</td>
+                                    <td><span class="badge bg-success">Concluído</span></td>
+                                    <td><a href="#" class="text-primary">Ver detalhes</a></td>
+                                </tr>
+                                <tr>
+                                    <td>08/05/2023 16:45</td>
+                                    <td>Atualização de perfil</td>
+                                    <td><span class="badge bg-success">Concluído</span></td>
+                                    <td><a href="#" class="text-primary">Ver detalhes</a></td>
+                                </tr>
+                                <tr>
+                                    <td>07/05/2023 09:20</td>
+                                    <td>Login no sistema</td>
+                                    <td><span class="badge bg-success">Sucesso</span></td>
+                                    <td><a href="#" class="text-primary">Ver detalhes</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
