@@ -1,0 +1,146 @@
+/* Estilos básicos para nossa página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.cabecalho {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navegacao {
+    background-color: #34495e;
+    padding: 15px;
+}
+
+.navegacao ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navegacao li {
+    margin: 0 15px;
+}
+
+.navegacao a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navegacao a:hover {
+    color: #3498db;
+}
+
+.destaque {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1200x600');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.destaque h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.destaque p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-bottom: 25px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #c0392b;
+}
+
+.conteudo {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.recursos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.recurso {
+    flex: 1;
+    min-width: 250px;
+    margin: 15px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.icone {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.rodape {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 50px;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .recursos {
+        flex-direction: column;
+    }
+    
+    .navegacao ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navegacao li {
+        margin: 8px 0;
+    }
+    
+    .destaque h2 {
+        font-size: 2rem;
+    }
+}
