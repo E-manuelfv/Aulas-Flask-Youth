@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="py-4">
+    <div class="container">
+        <h1 class="mb-4">Carrinho de Compras</h1>
+        
+        {% if cart %}
+        <div class="row">
+            <div class="col-lg-8 mb-4">
+                {% for item in cart.values() %}
+                <div class="cart-item mb-3 p-3 border rounded">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <img src="{{ item.imagem_url }}" alt="{{ item.nome }}" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="mb-1">{{ item.nome }}</h5>
+                            <p class="mb-1">Preço unitário: R$ {{ "%.2f"|format(item.preco) }}</p>
+                        </div>
+                        <div class="col-md-2">
+                            <form method="POST" action="{{ url_for('cart.update_cart', product_id=item.id) }}">
+                                <div class="input-group">
+                                    <input type="number" name="quantity" value="{{ item.quantity }}" min="0" class="form-control">
+                                    <button type="submit" class="btn btn-outline-secondary">Atualizar</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-2 text-end">
+                            <p class="mb-1">Subtotal: R$ {{ "%.2f"|format(item.preco * item.quantity) }}</p>
+                            <form method="POST" action="{{ url_for('cart.remove_from_cart', product_id=item.id) }}">
+                                <button type="submit" class="btn btn-danger btn-sm">Remover</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <form method="POST" action="{{ url_for('cart.clear_cart') }}">
+                    <button type="submit" class="btn btn-warning">Limpar Carrinho</button>
+                </form>
+            </div>
+            <div class="col-lg-4">
+                <div class="cart-summary p-3 border rounded">
+                    <h4 class="mb-3">Resumo do Carrinho</h4>
+                    <div class="summary-row d-flex justify-content-between">
+                        <span>Total:</span>
+                        <span>R$ {{ "%.2f"|format(total) }}</span>
+                    </div>
+                    <div class="d-grid mt-3">
+                        <form method="POST" action="{{ url_for('cart.create_preference') }}">
+                            <button type="submit" class="btn btn-primary w-100">Continuar compra →</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <p>Seu carrinho está vazio.</p>
+        {% endif %}
+    </div>
+</main>
+{% endblock %}

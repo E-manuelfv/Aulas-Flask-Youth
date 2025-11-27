@@ -35,7 +35,9 @@
                                 
                                 {# Link para Comprar/Adicionar ao Carrinho #}
                                 {# Passamos o ID do produto para a rota do carrinho (lembre-se do 'add-to-cart/<product_id>'!) #}
-                                <a href="{{ url_for('cart.add_to_cart', product_id=product.id) }}" class="btn btn-sm text-accent bg-white">Comprar</a>
+                                <form method="POST" action="{{ url_for('cart.add_to_cart', product_id=product.id) }}">
+                                    <button type="submit" class="btn btn-sm text-accent bg-white">Comprar</button>
+                                </form>
                             </div>
                         </div>
                     </div>
