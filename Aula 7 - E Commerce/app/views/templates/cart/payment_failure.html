@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-5 text-center">
+    <h1 class="text-danger">Pagamento Recusado</h1>
+    <p>Houve um problema com o seu pagamento. Tente novamente.</p>
+    <a href="{{ url_for('cart.view_cart') }}" class="btn btn-primary">Voltar ao Carrinho</a>
+</div>
+{% endblock %}

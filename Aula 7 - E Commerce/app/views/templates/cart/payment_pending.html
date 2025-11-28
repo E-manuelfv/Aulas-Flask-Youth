@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-5 text-center">
+    <h1 class="text-warning">Pagamento Pendente</h1>
+    <p>Seu pagamento está sendo processado. Aguarde a confirmação.</p>
+    <a href="{{ url_for('main.index') }}" class="btn btn-primary">Voltar à Loja</a>
+</div>
+{% endblock %}

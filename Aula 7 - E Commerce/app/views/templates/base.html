@@ -112,15 +112,12 @@
             </a>
             <div class="navbar-nav ms-auto">
                 {% if is_authenticated %}
+                
                 <a class="nav-link" href="{{ url_for('cart.view_cart') }}">
                     <i class="bi bi-cart3 me-1"></i>Carrinho
-                    <span class="badge bg-danger">
-                        {% if session.get('cart') %}
-                            {{ session.cart | length }}
-                        {% else %}
-                            0
-                        {% endif %}
-                    </span>
+                    {% if session.get('cart') %}
+                    <span class="badge bg-danger">{{ session.cart|length }}</span>
+                    {% endif %}
                 </a>
                 <a class="nav-link" href="#">
                     <i class="bi bi-heart me-1"></i>Favoritos

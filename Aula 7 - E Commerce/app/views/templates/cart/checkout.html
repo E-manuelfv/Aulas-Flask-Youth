@@ -1,9 +1,64 @@
 {% extends 'base.html' %}
+
 {% block content %}
-<main class="py-4">
-    <div class="container">
-        <h1>Checkout</h1>
-        <p>Em construção... Integração com Mercado Pago.</p>
+<div class="container my-5">
+    <h1 class="mb-4">Checkout</h1>
+    
+    <div class="row">
+        <div class="col-md-8">
+            <h4>Itens do Pedido</h4>
+            {% for item in cart.values() %}
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img src="{{ item.imagem_url }}" class="img-fluid rounded-start" alt="{{ item.nome }}">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ item.nome }}</h5>
+                            <p class="card-text">R$ {{ "%.2f"|format(item.preco) }}</p>
+                            <p class="card-text">Quantidade: {{ item.quantity }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Resumo do Pedido</h4>
+                    <p class="card-text">Total: R$ {{ "%.2f"|format(total) }}</p>
+                    <button id="checkout-btn" class="btn btn-primary w-100">Pagar com Mercado Pago</button>
+                </div>
+            </div>
+        </div>
     </div>
-</main>
+</div>
+
+<script>
+document.getElementById('checkout-btn').addEventListener('click', function() {
+    // Dispara a criação da preferência
+    fetch('{{ url_for("cart.create_preference") }}', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.error) {
+            alert('Erro: ' + data.error);
+        } else {
+            // Redireciona para o Mercado Pago
+            window.location.href = data.init_point;
+        }
+    })
+    .catch(error => {
+        console.error('Erro:', error);
+        alert('Erro ao processar pagamento.');
+    });
+});
+</script>
 {% endblock %}
