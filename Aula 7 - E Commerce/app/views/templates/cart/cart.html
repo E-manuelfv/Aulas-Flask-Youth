@@ -46,9 +46,7 @@
                         <span>R$ {{ "%.2f"|format(total) }}</span>
                     </div>
                     <div class="d-grid mt-3">
-                        <form method="POST" action="{{ url_for('cart.process_payment') }}">
-                            <button type="submit" class="btn btn-primary w-100">Continuar compra →</button>
-                        </form>
+                        <a class="btn btn-success" href="{{ url_for('cart.checkout') }}">Finalizar Compra</a>
                     </div>
                 </div>
             </div>

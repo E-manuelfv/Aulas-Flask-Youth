@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Pagamento não realizado ❌</h2>
+<p>Algo deu errado durante o pagamento.</p>
+
+<a href="{{ url_for('cart.checkout') }}" class="btn btn-danger">Tentar novamente</a>
+
+{% endblock %}
