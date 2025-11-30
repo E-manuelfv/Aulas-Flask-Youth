@@ -15,8 +15,8 @@ Este repositório contém todos os arquivos, projetos e materiais das aulas de *
 | **Aula 3** - Formulários e Dados | Formulários, Métodos GET/POST, Validação de Dados. | [📁 Link Aula 3](https://cedar-william-ff0.notion.site/Aula-3-Formul-rio-com-GET-e-POST-21b39ef840d780d6b0b2e003eb5ca969?pvs=74) |
 | **Aula 4** - Sistema de Autenticação com Flask | Login, Logout, Blueprint. | [📁 Link Aula 4](https://cedar-william-ff0.notion.site/Aula-4-Sistema-de-Autentica-o-com-Flask-21b39ef840d7809d90e2f7649635cfb7?pvs=74) |
 | **Aula 5** - Banco de Dados | SQLite, Models, Migrations, CRUD Completo. | [📁 Link Aula 5](https://cedar-william-ff0.notion.site/Aula-5-Integra-o-com-SQLAlchemy-21b39ef840d78073b4bdc27786450506) |
-| **Aula 6 ** - Organização de Projeto | Modelo MVC e POO com FLASK. | [📁 Link Aula 6](cedar-william-ff0.notion.site/Aula-Estrutura-de-Projeto-Flask-Site-21b39ef840d780c5bf65e96bf3160360?pvs=74) |
-| **Aula 7 (projeto)** - Projeto Final | Desenvolvimento de Aplicação Completa, Deploy, Boas Práticas. | [📁 Link Aula 7](Aula 7 - E Commerce) |
+| **Aula 6** - Organização de Projeto | Modelo MVC e POO com FLASK. | [📁 Link Aula 6](cedar-william-ff0.notion.site/Aula-Estrutura-de-Projeto-Flask-Site-21b39ef840d780c5bf65e96bf3160360?pvs=74) |
+| **Aula 7 (projeto)** - Projeto Final | Desenvolvimento de Aplicação Completa, Deploy, Boas Práticas. | [📁 Link Aula 7](https://github.com/E-manuelfv/Aulas-Flask-Youth/tree/main/Aula%207%20-%20E%20Commerce) |
 | **Aula 8 (Extra)** - Testes | A Estratégia dos Testes Profissionais | [📁 Link Aula 8](https://cedar-william-ff0.notion.site/Aula-8-A-Estrat-gia-dos-Testes-Profissionais-21b39ef840d780d496a4cb3782f58f62) |
 
 ---
